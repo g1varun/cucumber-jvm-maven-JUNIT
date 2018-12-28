@@ -8,7 +8,8 @@ public class Hook {
 	public static WebDriver driver;
 	
 	public static void openBrowser(){
-		System.setProperty("webdriver.chrome.driver", "/Users/ankugupta/Downloads/chromedriver");
+		String Path = System.getProperty("user.dir")+"/browser/chromedriver";
+		System.setProperty("webdriver.chrome.driver", Path);
 		driver = new ChromeDriver();
 		
 	}
